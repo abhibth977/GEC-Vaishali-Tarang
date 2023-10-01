@@ -330,7 +330,7 @@ document.querySelector('a[href="#events"]').addEventListener('click', function (
 var typeWriterElement = document.getElementById('typewriter');
 
 // The TextArray: 
-var textArray = ["I am TARANG2.0","Goverment Engineering Colege Vaishali",];
+var textArray = ["I am TARANG2.0","Government Engineering College Vaishali",];
 
 // You can also do this by transfering it through a data-attribute
 // var textArray = typeWriterElement.getAttribute('data-array');
