@@ -1,0 +1,665 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.4s ease;;
+}
+/* ===== Colours ===== */
+:root{
+  --body-color: #E4E9F7;
+  --nav-color: #fff;
+  --side-nav: #010718;
+  --text-color: #000;
+  /* --search-bar: #F2F2F2;
+  --search-text: #010718; */
+}
+body{
+  height: 100vh;
+  /* background-color: var(--body-color); */
+  background-color: transparent;
+  background: hsla(0, 0%, 0%, .9);
+  overflow: auto;
+}
+/* body {
+background: hsla(0, 0%, 0%, .9); 
+} */
+body.dark{
+  --body-color: #18191A;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  /* --text-color: #CCC; */
+  --search-bar: #242526;
+}
+nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  /* background-color: var(--nav-color); */
+  background-color: hsla(0, 0%, 0%, .9);
+  z-index: 100;
+}
+body.dark nav{
+  border: 1px solid #393838;
+}
+nav .nav-bar{
+  position: relative;
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  /* background-color: var(--nav-color); */
+  background-color: hsla(0, 0%, 0%, .9);
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-bar .sidebarOpen{
+  color: var(--text-color);
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+nav .nav-bar .logo a{
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+.logo{
+  margin-top: 5px;
+}
+.logo-tarang{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.menu .logo-toggle{
+  display: none;
+}
+.nav-bar .nav-links{
+  display: flex;
+  align-items: center;
+}
+.nav-bar .nav-links li{
+  margin: 0 5px;
+  list-style: none;
+}
+.nav-links li a{
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.btns:hover {
+  border-bottom: 4px solid rgb(245, 89, 28);
+  border-right: 4px solid rgb(245, 89, 28);
+  padding-bottom: 5px;
+  transition:0.2s;
+  font-size: 1rem;
+  padding: .25rem;
+}
+.main-container{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.custom-btn{
+width: 80px;
+height: 40px;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 25px;
+font-family: 'Lato', sans-serif;
+font-weight: 500;
+background: transparent;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+outline: none;
+}
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.description {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  /* color: #999; Adjust the color as needed */
+  font-style: italic; /* You can apply other styles as needed */
+}
+
+
+.tarang-style {
+color: hsla(21, 85%, 66%, 0.8);
+font: normal 5rem Varela Round, sans-serif;
+height: 5rem;
+left: 0;
+letter-spacing: 4px;
+font-style: italic;
+margin: -80px 0 0 0;
+position: absolute;
+text-align: center;
+text-transform: uppercase;
+top: 25%;
+width: 100%;
+animation: move linear 2000ms infinite;  
+z-index: 1;
+}
+
+@keyframes move {
+0% {
+  text-shadow:
+    4px -4px 0 rgb(246, 114, 21), 
+    3px -3px 0 rgb(246, 114, 21), 
+    2px -2px 0 rgb(246, 114, 21), 
+    1px -1px 0 rgb(246, 114, 21),
+    -4px 4px 0 rgb(57, 147, 73), 
+    -3px 3px 0 rgb(57, 147, 73), 
+    -2px 2px 0 rgb(57, 147, 73), 
+    -1px 1px 0 rgb(57, 147, 73)
+  ;
+}
+25% {    
+  text-shadow:      
+    -4px -4px 0 rgb(22, 241, 128), 
+    -3px -3px 0 rgb(22, 241, 128), 
+    -2px -2px 0 rgb(22, 241, 128), 
+    -1px -1px 0 rgb(22, 241, 128),
+    4px 4px 0 rgb(246, 114, 21), 
+    3px 3px 0 rgb(246, 114, 21), 
+    2px 2px 0 rgb(246, 114, 21), 
+    1px 1px 0 rgb(246, 114, 21)     
+  ;
+}
+50% {
+  text-shadow:
+    -4px 4px 0 rgb(246, 114, 21), 
+    -3px 3px 0 rgb(246, 114, 21), 
+    -2px 2px 0 rgb(246, 114, 21), 
+    -1px 1px 0 rgb(246, 114, 21),
+    4px -4px 0 rgb(234, 240, 240), 
+    3px -3px 0 rgb(234, 240, 240), 
+    2px -2px 0 rgb(234, 240, 240), 
+    1px -1px 0 rgb(234, 240, 240)
+  ;
+}
+75% {
+  text-shadow:
+    4px 4px 0 rgb(234, 240, 240), 
+    3px 3px 0 rgb(234, 240, 240), 
+    2px 2px 0 rgb(234, 240, 240), 
+    1px 1px 0 rgb(234, 240, 240),
+    -4px -4px 0 rgb(246, 114, 21), 
+    -3px -3px 0 rgb(246, 114, 21), 
+    -2px -2px 0 rgb(246, 114, 21), 
+    -1px -1px 0 rgb(246, 114, 21)      
+  ;
+}
+100% {
+  text-shadow:
+    4px -4px 0 rgb(246, 114, 21), 
+    3px -3px 0 rgb(246, 114, 21), 
+    2px -2px 0 rgb(246, 114, 21), 
+    1px -1px 0 rgb(246, 114, 21),
+    -4px 4px 0 rgb(57, 147, 73), 
+    -3px 3px 0 rgb(57, 147, 73), 
+    -2px 2px 0 rgb(57, 147, 73), 
+    -1px 1px 0 rgb(57, 147, 73)
+}  
+}
+
+.main-btns{
+position: absolute;
+top: 35%;
+left: 10;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+z-index: 1;
+}
+.main-btns button a{
+  text-decoration: none;
+  color: #fff;
+}
+.btn-style{
+height: 2.5rem;
+width: 8rem;
+margin: 1rem;
+font-size: 1rem;
+font-weight: 500;
+color: #fff;
+border: 2px solid rgb(246, 114, 21);
+background-color: transparent;
+border-radius: 5px;
+padding: .5rem;
+cursor: pointer;
+}
+.btn-style:hover{
+border: none;
+color: rgb(246, 114, 21);
+/* background-color: #fff; */
+border: 2px solid #fff;
+font-weight: 600;
+font-size: 1.1rem;
+transition: .25s;
+}
+.btn-style a:hover{
+    color: rgb(245, 89, 28);
+}
+
+.container {
+height: 75vh;
+margin:1rem ;
+}
+svg {
+height: 25rem;
+width: 100%;
+position: relative;
+}
+
+
+
+@media (max-width: 790px) {
+  nav .nav-bar .sidebarOpen{
+      display: block;
+      color: #fff;
+  }
+  .menu{
+      position: fixed;
+      height: 100%;
+      width: 320px;
+      left: -100%;
+      top: 0;
+      padding: 20px;
+      background-color: var(--side-nav);
+      color: #fff;
+      z-index: 100;
+      transition: all 0.4s ease;
+  }
+  nav.active .menu{
+      left: -0%;
+  }
+  nav.active .nav-bar .navLogo a{
+      opacity: 0;
+      transition: all 0.3s ease;
+  }
+  .menu .logo-toggle{
+      display: block;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .logo-toggle .siderbarClose{
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  .nav-bar .nav-links{
+      flex-direction: column;
+      padding-top: 30px;
+  }
+  .nav-links li a{
+      display: block;
+      margin-top: 20px;
+      color: var(--nav-color);
+  }
+  nav .nav-bar .logo a{
+      color: var(--nav-color);
+  }
+  
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(56, 29, 29, 0.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.btn-hover {
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    .btn-hover span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-hover:before,
+    .btn-hover:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-hover:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn-hover:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-hover:hover{
+      /* color: rgba(251,75,2,1); */
+      background: transparent;
+    }
+    .btn-hover:hover:before {
+      height: 100%;
+    }
+    .btn-hover:hover:after {
+      width: 100%;
+    }
+    .btn-hover span:before,
+    .btn-hover span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-hover span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-hover span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn-hover span:hover:before {
+      height: 100%;
+    }
+    .btn-hover span:hover:after {
+      width: 100%;
+    }
+    
+}
+
+
+footer {
+/* background-color: #333; */
+color: #fff;
+text-align: center;
+padding: 5px;
+position: static;
+bottom: 5%;
+width: 100%;
+z-index: 2;
+}
+
+.popup {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 2;
+      }
+
+      .popup-content {
+          background-color: white;
+          width: 300px;
+          margin: 100px auto;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Styles for the close button */
+      .close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+      }
+
+      .popup-content h2{
+        text-align: center;
+      }
+      .submit-btn{
+        background-color: rgb(246, 114, 21);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        margin: auto;
+        text-align: center;
+        padding: .25rem;
+        border-radius: 5px;
+    }
+    .submit-btn:hover{
+        
+        border: 2px solid rgb(246, 114, 21);
+        color: rgb(246, 114, 21);
+        background-color: #fff;
+        transition: .25s;
+    }
+
+    
+    .about{
+      position: static;
+      bottom: 4%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      /* height: 8rem; */
+      width: 100%;
+      color: #fff;
+      background-color: #000;
+      letter-spacing: 3px;
+      margin-top: 3.5rem;
+    }
+    .about h2{
+      text-align: center;
+      width: 100%;
+    }
+    .about1{
+      margin: 1rem;
+      font-size: 1rem;
+    }
+    .about2{
+      margin-bottom: 1rem;
+    }
+
+
+.events-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.events{
+  margin: 1.5rem;
+}
+.event-title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 4rem;
+  /* color: rgb(245, 89, 28); */
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0px 5px 10px;
+  text-shadow : 3px 3px 0px #222, 5px 5px 0px rgb(245, 89, 28); color : #007ACE;  
+}
+
+    .cardContainer
+{
+    width: 19rem;
+    height: 16rem;
+    margin: 1.25rem;
+    float: left; /* stack each div horizontally */
+}
+
+
+img
+{
+   border-radius: 10px;
+   margin: 2rem;
+}
+
+.back h2
+{
+    position: absolute;
+}
+
+.back p
+{
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+}
+
+.front h2
+{
+    position: absolute;
+    padding: 10px;
+    bottom: 1px;
+    text-align: center;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.cardContainer > .front
+{   
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+.front img{
+  background-color: #fff;
+  height: 300px;
+  width: 200px;
+  
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.cardContainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #fff;
+    color: #262626;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.cardContainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.cardContainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+.cardContainer h2{
+  font-weight: 600;
+  color: rgb(245, 89, 28);
+}
+
+.cardContainer button{
+  padding: auto;
+  height: 2.5rem;
+  width: 8rem;
+  border: 2px solid rgb(245, 89, 28);
+  background-color: rgb(245, 89, 28);
+  border-radius: 5px;
+  margin: 5rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+.cardContainer button:hover{
+  border: 3px solid rgb(245, 89, 28);
+  color: rgb(245, 89, 28);
+  font-weight: 500;
+  transition: .25s;
+  background-color: #fff;
+}
+@media(max-width:400px){
+  .cardContainer{
+   /* text-align: center; */
+   margin: 4rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+}
+
+
+.centeredBox {
+	width: 80%;
+	text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+.cursor {
+	border-left: 4px solid rgb(245, 89, 28);
+}
+
+
+
+
+
