@@ -17,6 +17,7 @@ body.addEventListener("click" , e =>{
 });
 
 
+// Creating SVG Effect
 // soccer 1
 
 TweenMax.set("#soccer1", { opacity: 1 });
@@ -260,6 +261,8 @@ function init() {
 
 init();
 
+
+// Creating popup for contact us form.
 // Get references to the button and popup
 const registerBtn = document.getElementById("contactUs");
         const popup = document.getElementById("popup");
@@ -293,8 +296,8 @@ const registerBtn = document.getElementById("contactUs");
 
 
 
-
-// Add click event listener to the "About" link
+// Add click event listener to all nav link.
+// About
 document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default behavior of the link
     const targetSection = document.getElementById('about'); // Get the target section by its ID
@@ -303,6 +306,7 @@ document.querySelector('a[href="#about"]').addEventListener('click', function (e
     }
 });
 
+// Home
 document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default behavior of the link
     const targetSection = document.getElementById('home'); // Get the target section by its ID
@@ -311,7 +315,7 @@ document.querySelector('a[href="#home"]').addEventListener('click', function (e)
     }
 });
 
-
+// Events
 document.querySelector('a[href="#events"]').addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default behavior of the link
     const targetSection = document.getElementById('events'); // Get the target section by its ID
@@ -321,7 +325,8 @@ document.querySelector('a[href="#events"]').addEventListener('click', function (
 });
 
 
-// The typewriter element
+
+// The typewriter effect 
 var typeWriterElement = document.getElementById('typewriter');
 
 // The TextArray: 
@@ -381,15 +386,15 @@ setTimeout( function () {
 
 
 
-        // Set the target date for the countdown (10 days from now)
-        const targetDate = new Date();
-        targetDate.setDate(targetDate.getDate() + 10);
+// Set the target date for the countdown (10 days from now)
+    const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + 10);
 
-        const daysElement = document.getElementById('days');
-        const hoursElement = document.getElementById('hours');
-        const minutesElement = document.getElementById('minutes');
-        const secondsElement = document.getElementById('seconds');
-        const closedMessageElement = document.getElementById('closed-message');
+    const daysElement = document.getElementById('days');
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
+    const closedMessageElement = document.getElementById('closed-message');
 
         function updateTimer() {
             const currentDate = new Date();
@@ -426,9 +431,8 @@ setTimeout( function () {
 
 
 
-        // script.js
 
-// Get references to the popup and close button
+// Popup window for Welcome info.
 const popup2 = document.getElementById('wel-popup-container');
 const closeButton2 = document.getElementById('wel-close-popup');
 
