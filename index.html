@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="tarang logo.png">
+    <link rel="icon" href="GEC-logo.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
-    <title>Tarang2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <title>GEC-Vaishali : Tarang2.0</title>
 
     
 </head>
 <body>
 
     <nav>
-        <div class="nav-bar">
+        <div class="nav-bar" >
             <i class='bx bx-menu sidebarOpen' ></i>
-            <div class="logo-tarang">
+            <div class="logo-tarang ">
             <span class="logo navLogo"><a href="#"><img src="tarang logo.png" alt="logo" height="60px" width="250px"></a></span>
             </div>
             <div class="menu">
@@ -65,23 +68,16 @@
             </form>
         </div>
     </div>
-
     
-    <!-- Tarang animation with buttons -->
-    <div class="main-container">
-        <div class="tarang-container">
-            <h1 class="tarang-style">Tarang <span class="description">2.0</span></h1> 
-        </div> <br>
-        <div class="main-btns">
-            <a href="register.html">
-                <button class="btn-style" >Register</button>
-            </a>
-            
-            <a href="#events">
-                <button class="btn-style" >Events</button>
-            </a>
-        </div>
+    <div class="college-title " id="home" >
+        <h1 class="display1">Government&nbsp; Engineering&nbsp; College&nbsp; Vaishali</h1>
     </div>
+    <div class="college-title ">
+        <h1 class="display2">GEC-Vaishali</h1>
+    </div>
+    
+    
+  
     
 
     <!-- Background sports animation -->
@@ -1267,15 +1263,42 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     </div>
 
-<!-- Adding cards section's for events -->
+      <!-- Tarang animation with buttons -->
+      <div class="main-container">
+        <div class="tarang-container">
+            <!-- <h1 class="tarang-style">Tarang <span class="description">2.0</span></h1>  -->
+            <img src="tarang.png" alt="png" class="tarang-style">
+        </div> <br>
+        <div class="main-btns">
+            <a href="register.html">
+                <button class="btn-style" >Register</button>
+            </a>
+            
+            <a href="#events">
+                <button class="btn-style" >Events</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="countDown-timer">
+        <h3>Registration Close in </h3>
+        <div class="countdown-unit" id="days"></div>
+        <div class="countdown-unit" id="hours"></div>
+        <div class="countdown-unit" id="minutes"></div>
+        <div class="countdown-unit" id="seconds"></div>
+        <div id="closed-message"></div>
+    </div>
+
+<!-- Adding cards section's for events and typing effect  -->
+<div class="centeredBox"> 
+    <span id="typewriter" data-array=""></span>
+    <span class="cursor"></span>
+</div>
 
     <div class="events-container" id="events">
         <div class="events">
             <h2 class="event-title">TARANG Events!!</h2> <br>
-            <div class="centeredBox"> 
-                <span id="typewriter" data-array=""></span>
-                <span class="cursor"></span>
-            </div> 
+             
             <div class="cardContainer">
                 <div class="front">
                     <div class="image">
@@ -1284,7 +1307,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in Cricket organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1298,7 +1321,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in VollyBall organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1312,7 +1335,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in Table-Tennis organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1326,7 +1349,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in Batminton organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1340,7 +1363,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in Carrom organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1354,7 +1377,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in Chess organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1368,7 +1391,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in Battle-Ground organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1382,7 +1405,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <h2>TARANG </h2>
+                    <h2>TARANG2.0 </h2>
                     <p>Get participate in Arm-Wrestling organised by GEC(Vaishali).</p> <br>
                     <button>Downloads Rules</button>
                 </div>
@@ -1393,34 +1416,74 @@
         
     </div>
 
-<!-- Adding about section -->
-    <div class="about" id="about"> 
-            <h2>About</h2>
-            <br>
-        <div class="about1">Visit us: <br> 
-            GOVERNMENT ENGINEERING COLLEGE VAISHALI, <br> address Phulpura, Chaksikandar, Bihar 844115</div>
-            <br> <br>
-            <ul>
-                <a href="https://www.instagram.com/"><li>InstaGram <i class="fab fa-instagram"></i></i></a>
-                <a href="https://twitter.com/"><li>FaceBook<i class="fab fa-facebook-f"></i></li></a>
-                <a href="https://twitter.com/"><li>Twitter<i class="fab fa-twitter"></i></li></a>
-            </ul>
-        <br> <br>
-        <div class="about2">Working Hours: <br>
-        Monday-Saturday 10:30am -- 5:00pm</div>
-        <br>
-        Call us on:
-        0621- 2262650 <br> <br>
-         Email us on:
-        enquiry@gcevaishali.org
-       </div>
-    </div> <br> <br>
-    <footer>
-
-        &copy;2023 Government Engineering College Vaishali
-    </footer>
+    <!-- Popup container for display some message regarding college -->
+    <div id="wel-popup-container" class="popup2">
+        <div class="wel-popup-content">
+            <span class="wel-close-button" id="wel-close-popup">&times;</span>
+            <img src="GEC-Logo.png" alt="logo" height="80px" width="80px"><br>
+            <h1>Welcome to Our GEC-Vaishali</h1>
+            <p>Get participate in our sports event.</p>
+            <a href="register.html">
+                <button class="btn-style" style="color: rgb(245, 89, 28);">SignUp/SignIn</button>
+            </a>
+        </div>
+    </div>
     
+<!-- Footer and About section -->
+    <div class="footer" id="about">
+        <div class="inner-footer">
+      
+      <!--  for company name and description -->
+          <div class="footer-items">
+            <img src="GEC-Logo.png" alt="logo" height="80px" width="80px">
+            <h1>Government Engineering College Vaishali</h1>
+            <!-- <p>Get participate in our TARANG2.0 Sports fest.</p> -->
+          </div>
+      
+      <!--  for quick links  -->
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div> <!--for the underline -->
+              <ul>
+                <a href="#home"><li>Home</li></a>
+                <a href="#events"><li>Events</li></a>
+                <a href="#"><li>ContactUs</li></a>
+                <a href="register.html"><li>SignUp/SigIn</li></a>
+              </ul>
+          </div>
+      
+      <!--  for contact us info -->
+          <div class="footer-items">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Phulpura, Chaksikandar, Bihar 844115</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>0621- 2262650 </li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>enquiry@gcevaishali.org</li>
+              </ul> 
+            
+      <!--   for social links -->
+              <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div> 
+          </div>
+        </div>
+        
+      <!--   Footer Bottom start  -->
+        <div class="footer-bottom">
+            <a href="https://github.com/abhibth977" style="display: block;">Developer Abhishek Kumar </a>
+           Copyright &copy;2023 Government Engineering College Vaishali
+        </div>
+      </div>
+
+
+      <!-- /* All code written and design by Abhishek Kumar from Government Engineering College Vaishali 23 batch */ -->
+
 </body>
 <script src="script.js"></script>
+
+
 
 </html>

@@ -386,4 +386,72 @@ setTimeout( function () {
 
 
 
+        // Set the target date for the countdown (10 days from now)
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 10);
 
+        const daysElement = document.getElementById('days');
+        const hoursElement = document.getElementById('hours');
+        const minutesElement = document.getElementById('minutes');
+        const secondsElement = document.getElementById('seconds');
+        const closedMessageElement = document.getElementById('closed-message');
+
+        function updateTimer() {
+            const currentDate = new Date();
+            const timeRemaining = targetDate - currentDate;
+
+            if (timeRemaining > 0) {
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                daysElement.textContent = `${days}d`;
+                hoursElement.textContent = `${hours}h`;
+                minutesElement.textContent = `${minutes}m`;
+                secondsElement.textContent = `${seconds}s`;
+
+                closedMessageElement.textContent = ''; // Clear the "Registration Closed" message
+            } else {
+                // Countdown is over, display the "Registration Closed" message
+                daysElement.textContent = '';
+                hoursElement.textContent = '';
+                minutesElement.textContent = '';
+                secondsElement.textContent = '';
+                closedMessageElement.textContent = 'Registration Closed';
+            }
+        }
+
+        // Update the timer every second
+        setInterval(updateTimer, 1000);
+
+        // Initial update
+        updateTimer();
+
+
+
+
+        // script.js
+
+// Get references to the popup and close button
+const popup2 = document.getElementById('wel-popup-container');
+const closeButton2 = document.getElementById('wel-close-popup');
+
+// Function to show the popup
+function welShowPopup() {
+    popup2.style.display = 'block';
+}
+
+// Function to hide the popup
+function welHideidePopup() {
+    popup2.style.display = 'none';
+}
+
+// Show the popup when the page loads
+window.addEventListener('load', welShowPopup);
+
+// Close the popup when the close button is clicked
+closeButton2.addEventListener('click', welHideidePopup);
+
+
+ /* All code written and design by Abhishek Kumar from Government Engineering College Vaishali 23 batch */ 

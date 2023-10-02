@@ -57,6 +57,7 @@ nav .nav-bar{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* justify-content: end; */
 }
 nav .nav-bar .sidebarOpen{
   color: var(--text-color);
@@ -114,6 +115,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
+margin-top: -5rem;
+/* position: absolute;
+top: 50%; */
 }
 .custom-btn{
 width: 80px;
@@ -134,99 +138,21 @@ outline: none;
 
 
 
-  @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-
-
-.description {
-  font-size: 2.5rem; /* Adjust the font size as needed */
-  /* color: #999; Adjust the color as needed */
-  font-style: italic; /* You can apply other styles as needed */
-}
-
-
 .tarang-style {
-color: hsla(21, 85%, 66%, 0.8);
-font: normal 5rem Varela Round, sans-serif;
 height: 5rem;
-left: 0;
-letter-spacing: 4px;
-font-style: italic;
-margin: -80px 0 0 0;
-position: absolute;
-text-align: center;
-text-transform: uppercase;
-top: 25%;
-width: 100%;
-animation: move linear 2000ms infinite;  
+/* left: 7%; */
+/* margin: -90px 0 0 20px; */
+width: 24rem;
+display: block;
 z-index: 1;
 }
 
-@keyframes move {
-0% {
-  text-shadow:
-    4px -4px 0 rgb(246, 114, 21), 
-    3px -3px 0 rgb(246, 114, 21), 
-    2px -2px 0 rgb(246, 114, 21), 
-    1px -1px 0 rgb(246, 114, 21),
-    -4px 4px 0 rgb(57, 147, 73), 
-    -3px 3px 0 rgb(57, 147, 73), 
-    -2px 2px 0 rgb(57, 147, 73), 
-    -1px 1px 0 rgb(57, 147, 73)
-  ;
-}
-25% {    
-  text-shadow:      
-    -4px -4px 0 rgb(22, 241, 128), 
-    -3px -3px 0 rgb(22, 241, 128), 
-    -2px -2px 0 rgb(22, 241, 128), 
-    -1px -1px 0 rgb(22, 241, 128),
-    4px 4px 0 rgb(246, 114, 21), 
-    3px 3px 0 rgb(246, 114, 21), 
-    2px 2px 0 rgb(246, 114, 21), 
-    1px 1px 0 rgb(246, 114, 21)     
-  ;
-}
-50% {
-  text-shadow:
-    -4px 4px 0 rgb(246, 114, 21), 
-    -3px 3px 0 rgb(246, 114, 21), 
-    -2px 2px 0 rgb(246, 114, 21), 
-    -1px 1px 0 rgb(246, 114, 21),
-    4px -4px 0 rgb(234, 240, 240), 
-    3px -3px 0 rgb(234, 240, 240), 
-    2px -2px 0 rgb(234, 240, 240), 
-    1px -1px 0 rgb(234, 240, 240)
-  ;
-}
-75% {
-  text-shadow:
-    4px 4px 0 rgb(234, 240, 240), 
-    3px 3px 0 rgb(234, 240, 240), 
-    2px 2px 0 rgb(234, 240, 240), 
-    1px 1px 0 rgb(234, 240, 240),
-    -4px -4px 0 rgb(246, 114, 21), 
-    -3px -3px 0 rgb(246, 114, 21), 
-    -2px -2px 0 rgb(246, 114, 21), 
-    -1px -1px 0 rgb(246, 114, 21)      
-  ;
-}
-100% {
-  text-shadow:
-    4px -4px 0 rgb(246, 114, 21), 
-    3px -3px 0 rgb(246, 114, 21), 
-    2px -2px 0 rgb(246, 114, 21), 
-    1px -1px 0 rgb(246, 114, 21),
-    -4px 4px 0 rgb(57, 147, 73), 
-    -3px 3px 0 rgb(57, 147, 73), 
-    -2px 2px 0 rgb(57, 147, 73), 
-    -1px 1px 0 rgb(57, 147, 73)
-}  
-}
+
 
 .main-btns{
-position: absolute;
+/* position: absolute;
 top: 35%;
-left: 10;
+left: 10; */
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -271,6 +197,7 @@ svg {
 height: 25rem;
 width: 100%;
 position: relative;
+/* margin-top: -2rem; */
 }
 
 
@@ -516,9 +443,10 @@ z-index: 2;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 .events{
-  margin: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .event-title {
   text-align: center;
@@ -529,28 +457,29 @@ z-index: 2;
   color: #fff;
   font-weight: 600;
   text-shadow: 0px 5px 10px;
-  text-shadow : 3px 3px 0px #222, 5px 5px 0px rgb(245, 89, 28); color : #007ACE;  
+  text-shadow : 3px 3px 0px #222, 5px 5px 0px rgb(245, 89, 28); 
+   
 }
 
     .cardContainer
 {
     width: 19rem;
     height: 16rem;
-    margin: 1.25rem;
-    float: left; /* stack each div horizontally */
+    margin-bottom: 3.5rem;
+    float: left; /*stack each div horizontally*/
 }
 
 
 img
 {
    border-radius: 10px;
-   margin: 2rem;
+   /* margin: 2rem; */
 }
 
-.back h2
+/* .back h2
 {
     position: absolute;
-}
+} */
 
 .back p
 {
@@ -573,16 +502,16 @@ img
     position: absolute;
     transform: perspective(600px) rotateY(0deg);
     
-    width: 302px;
-    height: 290px;
+    width: 18rem;
+    height: 17rem;
     
     backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
     transition: transform .5s linear 0s;
 }
 .front img{
   background-color: #fff;
-  height: 300px;
-  width: 200px;
+  height: 18rem;
+  width:17rem;
   
 }
 
@@ -593,8 +522,8 @@ img
     transform: perspective(600px) rotateY(180deg);
     background: #fff;
     color: #262626;
-    width: 302px;
-    height: 290px;
+    width: 18rem;
+    height: 17rem;
     border-radius: 10px;
     padding: 5px;
     backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
@@ -611,6 +540,7 @@ img
     transform: perspective(600px) rotateY(0deg);
 }
 .cardContainer h2{
+  text-align: center;
   font-weight: 600;
   color: rgb(245, 89, 28);
 }
@@ -626,6 +556,7 @@ img
   color: #fff;
   text-align: center;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -638,28 +569,252 @@ img
   transition: .25s;
   background-color: #fff;
 }
-@media(max-width:400px){
+@media(max-width:415px){
   .cardContainer{
    /* text-align: center; */
-   margin: 4rem;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   /* margin: 4rem; */
+   margin-left: 3.5rem;
+   height: 18;
+   width: 19rem;
+   float: none;
   }
+  .centeredBox{
+    margin-left: 1rem;
+  }
+ 
+  .events-container{
+    justify-content: end;
+  }
+  .main-container{
+    margin-top: -15rem;
+  }
+  .college-title:first-child{
+    display: none;
+  }
+  .college-title:last-child{
+    display: block;
+  }
+  
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 .centeredBox {
-	width: 80%;
+  position: static;
+	width: 90%;
 	text-align: center;
-  color: #fff;
+  color: whitesmoke;
+  background: transparent;
   font-size: 2rem;
+}
+#typewriter{
+  font-family: 'Monoton', cursive;
+  font-weight: normal;
 }
 .cursor {
 	border-left: 4px solid rgb(245, 89, 28);
 }
 
+.college-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.college-title h1{  
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase;
+  color: whitesmoke;
+  background: transparent;
+  font-weight: normal;
+  background-color: transparent;
+  text-decoration: 1px underline double;
+}
 
 
 
+.countDown-timer{
+  text-align: center;
+  margin: 1rem 0 0 1rem;
+}
+.countDown-timer h3{
+  color: whitesmoke;
+  font-weight: 600;
+}
+.countdown-unit {
+  display: inline-block;
+  font-size: 1.75rem;
+  color: #333;
+  background-color: whitesmoke;
+  margin: 10px;
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Style for the "Registration Closed" message */
+#closed-message {
+  font-size: 24px;
+  color: #ff0000;
+  margin-top: 20px;
+}
+
+
+
+/* Popup container for display message Style */
+/* styles.css */
+
+.popup2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.wel-popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.wel-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.display2{
+  display: none;
+}
+
+
+
+/* Styling for Footer  */
+
+.footer {
+	width: 100%;
+	background: #000;
+	display: block;
+ }
+
+ .inner-footer {
+	 width: 95%;
+	 margin: auto;
+	 padding: 30px 10px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 box-sizing: border-box;
+	 justify-content: center;
+ }
+
+.footer-items {
+	width: 25%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.footer-items p {
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+	color: #fff;
+}
+
+.footer-items h1 {
+	color: #fff;
+}
+
+.border1 {
+	height: 3px;
+	width: 40px;
+	background: rgb(245, 89, 28);
+	color: rgb(245, 89, 28);
+	background-color: rgb(245, 89, 28);
+	border: 0px;
+}
+
+ul {
+	list-style: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;	
+ }
+
+ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+ul a:hover {
+	color: rgb(245, 89, 28);
+}
+
+ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+li i {
+	margin-right: 20px;
+}
+
+.social-media {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media i {
+	height: 25px;
+	width: 25px;
+	margin: 20px 10px;
+	padding: 4px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.social-media i:hover {
+	transform: scale(1.5);
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 660px) {
+	.footer-items {
+		width: 100%;
+	}
+}
+
+
+
+
+/* All code written and design by Abhishek Kumar from Government Engineering College Vaishali 23 batch */
 

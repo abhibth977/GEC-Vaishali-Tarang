@@ -21,3 +21,7 @@ document.querySelector('a[href="#registration"]').addEventListener('click', func
       targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
   }
 });
+
+
+
+/* All code written and design by Abhishek Kumar from Government Engineering College Vaishali 23 batch */ 
