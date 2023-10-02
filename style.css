@@ -242,6 +242,10 @@ position: relative;
       flex-direction: column;
       padding-top: 30px;
   }
+  .nav-bar .nav-links li{
+    margin: none;
+    padding: 1.95rem;
+  }
   .nav-links li a{
       display: block;
       margin-top: 20px;
