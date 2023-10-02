@@ -447,6 +447,11 @@ z-index: 2;
 }
 .events{
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 .event-title {
   text-align: center;
