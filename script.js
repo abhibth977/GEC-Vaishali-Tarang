@@ -432,26 +432,7 @@ setTimeout( function () {
 
 
 
-// Popup window for Welcome info.
-const popup2 = document.getElementById('wel-popup-container');
-const closeButton2 = document.getElementById('wel-close-popup');
-
-// Function to show the popup
-function welShowPopup() {
-    popup2.style.display = 'block';
-}
-
-// Function to hide the popup
-function welHideidePopup() {
-    popup2.style.display = 'none';
-}
-
-// Show the popup when the page loads
-window.addEventListener('load', welShowPopup);
-
-// Close the popup when the close button is clicked
-closeButton2.addEventListener('click', welHideidePopup);
-
+// 
 
  /* All code written and design by Abhishek Kumar from Government Engineering College Vaishali 23 batch */ 
 
