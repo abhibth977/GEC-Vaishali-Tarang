@@ -387,47 +387,32 @@ setTimeout( function () {
 
 
 // Set the target date for the countdown (10 days from now)
-    const targetDate = new Date();
-      targetDate.setDate(targetDate.getDate() + 10);
+  
+    var countDownDate = new Date("Oct 24, 2023 00:00:00").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
 
-    const daysElement = document.getElementById('days');
-    const hoursElement = document.getElementById('hours');
-    const minutesElement = document.getElementById('minutes');
-    const secondsElement = document.getElementById('seconds');
-    const closedMessageElement = document.getElementById('closed-message');
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        function updateTimer() {
-            const currentDate = new Date();
-            const timeRemaining = targetDate - currentDate;
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
 
-            if (timeRemaining > 0) {
-                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        if(distance < 0){
+            clearInterval(x);
 
-                daysElement.textContent = `${days}d`;
-                hoursElement.textContent = `${hours}h`;
-                minutesElement.textContent = `${minutes}m`;
-                secondsElement.textContent = `${seconds}s`;
-
-                closedMessageElement.textContent = ''; // Clear the "Registration Closed" message
-            } else {
-                // Countdown is over, display the "Registration Closed" message
-                daysElement.textContent = '';
-                hoursElement.textContent = '';
-                minutesElement.textContent = '';
-                secondsElement.textContent = '';
-                closedMessageElement.textContent = 'Registration Closed';
-            }
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
         }
 
-        // Update the timer every second
-        setInterval(updateTimer, 1000);
-
-        // Initial update
-        updateTimer();
-
+    },1000)
 
 
 

@@ -12,24 +12,18 @@
   --nav-color: #fff;
   --side-nav: #010718;
   --text-color: #000;
-  /* --search-bar: #F2F2F2;
-  --search-text: #010718; */
 }
 body{
   height: 100vh;
-  /* background-color: var(--body-color); */
   background-color: transparent;
   background: hsla(0, 0%, 0%, .9);
   overflow: auto;
 }
-/* body {
-background: hsla(0, 0%, 0%, .9); 
-} */
+
 body.dark{
   --body-color: #18191A;
   --nav-color: #242526;
   --side-nav: #242526;
-  /* --text-color: #CCC; */
   --search-bar: #242526;
 }
 nav{
@@ -38,7 +32,6 @@ nav{
   left: 0;
   height: 70px;
   width: 100%;
-  /* background-color: var(--nav-color); */
   background-color: hsla(0, 0%, 0%, .9);
   z-index: 100;
 }
@@ -50,14 +43,12 @@ nav .nav-bar{
   height: 100%;
   max-width: 1000px;
   width: 100%;
-  /* background-color: var(--nav-color); */
   background-color: hsla(0, 0%, 0%, .9);
   margin: 0 auto;
   padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* justify-content: end; */
 }
 nav .nav-bar .sidebarOpen{
   color: var(--text-color);
@@ -116,8 +107,6 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 margin-top: -5rem;
-/* position: absolute;
-top: 50%; */
 }
 .custom-btn{
 width: 80px;
@@ -140,54 +129,11 @@ outline: none;
 
 .tarang-style {
 height: 5rem;
-/* left: 7%; */
-/* margin: -90px 0 0 20px; */
 width: 24rem;
 display: block;
 z-index: 1;
 }
 
-
-
-.main-btns{
-/* position: absolute;
-top: 35%;
-left: 10; */
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-z-index: 1;
-}
-.main-btns button a{
-  text-decoration: none;
-  color: #fff;
-}
-.btn-style{
-height: 2.5rem;
-width: 8rem;
-margin: 1rem;
-font-size: 1rem;
-font-weight: 500;
-color: #fff;
-border: 2px solid rgb(246, 114, 21);
-background-color: transparent;
-border-radius: 5px;
-padding: .5rem;
-cursor: pointer;
-}
-.btn-style:hover{
-border: none;
-color: rgb(246, 114, 21);
-/* background-color: #fff; */
-border: 2px solid #fff;
-font-weight: 600;
-font-size: 1.1rem;
-transition: .25s;
-}
-.btn-style a:hover{
-    color: rgb(245, 89, 28);
-}
 
 .container {
 height: 75vh;
@@ -197,7 +143,6 @@ svg {
 height: 25rem;
 width: 100%;
 position: relative;
-/* margin-top: -2rem; */
 }
 
 
@@ -286,20 +231,6 @@ position: relative;
       width: 100%;
       height: 100%;
     }
-    /* .btn-hover:before,
-    .btn-hover:after {
-      position: absolute;
-      content: "";
-      right: 0;
-      bottom: 0;
-      background: rgba(251,75,2,1);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
-    } */
     .btn-hover:before{
        height: 0%;
        width: 2px;
@@ -309,7 +240,6 @@ position: relative;
       height: 2px;
     }
     .btn-hover:hover{
-      /* color: rgba(251,75,2,1); */
       background: transparent;
     }
     .btn-hover:hover:before {
@@ -318,20 +248,7 @@ position: relative;
     .btn-hover:hover:after {
       width: 100%;
     }
-    /* .btn-hover span:before,
-    .btn-hover span:after {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 0;
-      background: rgba(251,75,2,1);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
-    } */
+    
     .btn-hover span:before {
       width: 2px;
       height: 0%;
@@ -352,7 +269,6 @@ position: relative;
 
 
 footer {
-/* background-color: #333; */
 color: #fff;
 text-align: center;
 padding: 5px;
@@ -393,28 +309,6 @@ z-index: 2;
       .popup-content h2{
         text-align: center;
       }
-      .submit-btn{
-        background-color: rgb(246, 114, 21);
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        height: 2rem;
-        width: 100%;
-        font-size: 1rem;
-        margin: auto;
-        text-align: center;
-        padding: .25rem;
-        border-radius: 5px;
-    }
-    .submit-btn:hover{
-        
-        border: 2px solid rgb(246, 114, 21);
-        color: rgb(246, 114, 21);
-        background-color: #fff;
-        transition: .25s;
-    }
-
     
     .about{
       position: static;
@@ -423,7 +317,6 @@ z-index: 2;
       justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap;
-      /* height: 8rem; */
       width: 100%;
       color: #fff;
       background-color: #000;
@@ -463,7 +356,6 @@ z-index: 2;
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 4rem;
-  /* color: rgb(245, 89, 28); */
   color: #fff;
   font-weight: 600;
   text-shadow: 0px 5px 10px;
@@ -476,7 +368,7 @@ z-index: 2;
     width: 19rem;
     height: 16rem;
     margin-bottom: 3.5rem;
-    float: left; /*stack each div horizontally*/
+    float: left; 
 }
 .cardContainer a{
   text-decoration: none;
@@ -486,13 +378,8 @@ z-index: 2;
 img
 {
    border-radius: 10px;
-   /* margin: 2rem; */
 }
 
-/* .back h2
-{
-    position: absolute;
-} */
 
 .back p
 {
@@ -606,8 +493,6 @@ img
 }
 @media(max-width:415px){
   .cardContainer{
-   /* text-align: center; */
-   /* margin: 4rem; */
    margin-left: 3.5rem;
    height: 18;
    width: 19rem;
@@ -668,68 +553,30 @@ img
 }
 
 
-
-.countDown-timer{
-  text-align: center;
-  margin: 1rem 0 0 1rem;
+.launch-time{
+  display:flex ;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  align-items: center;
 }
-.countDown-timer h3{
-  color: whitesmoke;
-  font-weight: 600;
-}
-.countdown-unit {
-  display: inline-block;
-  font-size: 1.75rem;
-  color: #333;
-  background-color: whitesmoke;
-  margin: 10px;
-  border: 2px solid #333;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* Style for the "Registration Closed" message */
-#closed-message {
-  font-size: 24px;
-  color: #ff0000;
-  margin-top: 20px;
-}
-
-
-
-/* Popup container for display message Style */
-/* styles.css */
-
-.popup2 {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-
-.wel-popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.launch-time div{
+  flex-basis: 100px;
+  border: 1px solid #fff;
+  border-radius: 8px;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: .75rem;
   text-align: center;
 }
-
-.wel-close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
+.launch-time div p{
+  color: #000;
+  font-size: 60px;
+  margin-bottom: -14px;
 }
+.launch-time div span{
+  color: #000;
+}
+
+
 
 .display2{
   display: none;
@@ -880,7 +727,6 @@ button.slick-prev, button.slick-prev:hover {
   z-index: 1;
   width: 47px;
   height: 75px;
-  /* background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png"); */
   background-size: 95px;
       background-position-x: right;
 }
@@ -894,7 +740,6 @@ button.slick-prev, button.slick-prev:hover {
   height: 324px;
 }
 
-/* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
 /* Slider */
 .slick-slider
 {
@@ -1015,11 +860,6 @@ button.slick-prev, button.slick-prev:hover {
     display: none;
 }
 @charset 'UTF-8';
-/* Slider */
-.slick-loading .slick-list
-{
-    /* background: #fff url('http://maggiesadler.com/wp-content/uploads/2015/10/ajax-loader.gif') center center no-repeat; */
-}
 
 /* Icons */
 @font-face
@@ -1028,9 +868,7 @@ button.slick-prev, button.slick-prev:hover {
     font-weight: normal;
     font-style: normal;
 
-    /* src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot'); */
-    /* src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.woff') format('woff'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.ttf') format('truetype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.svg#slick') format('svg'); */
-}
+   }
 /* Arrows */
 .slick-prev,
 .slick-next
