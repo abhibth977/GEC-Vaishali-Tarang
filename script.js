@@ -290,6 +290,7 @@ const registerBtn = document.getElementById("contactUs");
                 closePopupFn();
             }
         });
+        
 
 
 
@@ -297,14 +298,8 @@ const registerBtn = document.getElementById("contactUs");
 
 
 // Add click event listener to all nav link.
-// About
-document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent the default behavior of the link
-    const targetSection = document.getElementById('about'); // Get the target section by its ID
-    if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
-    }
-});
+
+
 
 // Home
 document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
