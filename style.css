@@ -539,7 +539,9 @@ color: rgb(245, 89, 28);
   .college-title:last-child{
     display: block;
   }
-  
+  .faculties button{
+    margin-left:1.45rem; 
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
@@ -1082,4 +1084,25 @@ button.slick-prev, button.slick-prev:hover {
 }
 
 
-
+.faculties{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.faculties button{
+  text-align: center;
+  background-color: rgb(245, 89, 28);
+  color: #fff;
+  width: 20rem;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  height: 4rem;
+  padding: 1rem;
+}
+.faculties button:hover{
+  background-color: transparent;
+  border: 2px solid rgb(245, 89, 28);
+  color: rgb(245, 89, 28);
+  font-weight: 500;
+}
