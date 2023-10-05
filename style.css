@@ -389,17 +389,39 @@ img
 }
 .back .participate-btn{
     border-radius: 5px;
-    font-size: 2rem;
-    width: 15rem;
+    font-size: 1.3rem;
+    width: 16rem;
     position: relative;
-    bottom: 20%;
-    left: 8%;
-    background-color: #4ebce8;
+    bottom: 23%;
+    left: 5%;
+    /* background-color: #4ebce8; */
+    background-color: rgb(245, 89, 28);
+    color: #fff;
+    border: none;
     border: none;
 }
 .back .participate-btn:hover{
   background-color: transparent;
-  border: 2px solid black;
+border: 2px solid rgb(245, 89, 28);
+color: rgb(245, 89, 28);
+}
+
+.back .participate-btn2{
+  border-radius: 5px;
+  font-size: 1.3rem;
+  width: 17rem;
+  position: relative;
+  bottom: 15%;
+  left: 2%;
+  /* background-color: #4ebce8; */
+  background-color: rgb(245, 89, 28);
+  color: #fff;
+  border: none;
+}
+.back .participate-btn2:hover{
+background-color: transparent;
+border: 2px solid rgb(245, 89, 28);
+color: rgb(245, 89, 28);
 }
 
 .front h2
@@ -445,7 +467,7 @@ img
     background: #fff;
     color: #262626;
     width: 18rem;
-    height: 17rem;
+    height: 18rem;
     border-radius: 10px;
     padding: 5px;
     backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
@@ -471,12 +493,15 @@ img
   padding: auto;
   height: 2.5rem;
   width: 8rem;
-  border: 2px solid rgb(245, 89, 28);
-  background-color: rgb(245, 89, 28);
+  /* border: 2px solid rgb(245, 89, 28);
+  background-color: rgb(245, 89, 28); */
+  border: none;
+  background-color: #4ebce8;
   border-radius: 5px;
   margin: 5rem;
-  color: #fff;
+  color: #000;
   text-align: center;
+  font-size: 1rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -485,8 +510,8 @@ img
 
 }
 .cardContainer button:hover{
-  border: 3px solid rgb(245, 89, 28);
-  color: rgb(245, 89, 28);
+  border: 2px solid #4ebce8;
+  color: #4ebce8;
   font-weight: 500;
   transition: .25s;
   background-color: #fff;
