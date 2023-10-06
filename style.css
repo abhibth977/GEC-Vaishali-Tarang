@@ -387,6 +387,15 @@ img
     top: 50px;
     font-size: 15px;
 }
+.back h3{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  bottom: 25%;
+  left: 5%;
+
+}
 .back .participate-btn{
     border-radius: 5px;
     font-size: 1.3rem;
@@ -516,6 +525,7 @@ color: rgb(245, 89, 28);
   transition: .25s;
   background-color: #fff;
 }
+
 @media(max-width:415px){
   .cardContainer{
    margin-left: 3.5rem;
@@ -1105,4 +1115,8 @@ button.slick-prev, button.slick-prev:hover {
   border: 2px solid rgb(245, 89, 28);
   color: rgb(245, 89, 28);
   font-weight: 500;
+}
+
+.facultyBtn{
+  width: 13.5rem;
 }

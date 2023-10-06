@@ -425,7 +425,7 @@ jQuery(document).ready(function($) {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -438,7 +438,7 @@ jQuery(document).ready(function($) {
       }
     },
     {
-       breakpoint: 400,
+       breakpoint: 415,
        settings: {
           arrows: false,
           slidesToShow: 1,
