@@ -1168,9 +1168,14 @@ button.slick-prev, button.slick-prev:hover {
   border: none;
   border-radius: 5px;
   font-size: 1rem;
+  cursor: pointer;
 }
 .general-rule:hover{
   background-color: transparent;
   border: 2px solid rgb(245, 89, 28);
   color: #000;
+}
+.location{
+  margin-left: 1rem;
+  font-size: 1.25rem;
 }
