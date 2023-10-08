@@ -15,78 +15,7 @@
     <title>GEC-Vaishali : Tarang2.0</title>
   <style>
 
-  * {
-    box-sizing: border-box;
-  }
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float three columns side by side */
-  .column {
-    float: left;
-    width: 33.3%;
-    padding: 10px 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {
-    margin: 0 -5px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 1000px) {
-    .column {
-      width: 50%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 12px;
-    text-align: center;
-    background-color: #f1f1f1;
-    transition: 0.3s;
-    border-radius: 10px;
-  }
-  
-  .card:hover {
-    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
-  }
-  
-  .card img {
-    border-radius: 10px 10px 10px 10px;
-    height: 20rem;
-    width: 100%;
-  }
-  a{
-    text-decoration: none;
-    color: #000;
-  }
 </style>  
 
 </head>
@@ -104,10 +33,9 @@
                     <i class='bx bx-x siderbarClose'></i>
                 </div>
                 <ul class="nav-links">
-                  <a href="location.html"><i class="fa fa-map-marker location" aria-hidden="true" ></i>Location</a>
+                  <!-- <a href="#"><i class="fa fa-map-marker location" aria-hidden="true" ></i>Location</a> -->
                     <li><a href="index.html#home"><button class="custom-btn btn-hover btns"><span>Home</span></button></a></li>
                     <li><a href="index.html#events" ><button class="custom-btn btn-hover btns"><span>Events</span></button></a></li>
-                    <!-- <li><a href="#about" ><button class="custom-btn btn-hover btns"><span>About</span></button></a></li> -->
                     <li><a href="about.html" ><button class="custom-btn btn-hover btns"><span>About</span></button></a></li>
                     <li><a href="about.html#contact"><button class="custom-btn btn-hover btns" ><span>contact </span></button></a></li>
                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeQMRAzMDnBBoDvW22FPwc3Sh9Tpe18jk_jhHbZv-GG20R1Kw/viewform?usp=sf_link"><button class="custom-btn btn-hover btns facultyBtn" ><span>Faculty & Staff Participation </span></button></a></li>
@@ -116,32 +44,9 @@
             </div>
         </div>
     </nav>
-<!-- partial:index.partial.html -->
-<div class="row">
-  
-    <div class="column">
-           <a href="#">
-            <div class="card">
-                <img src="badminton-img.jpg" >
-                <h2>Boys & Girls</h2>
-            </div>
-           </a>
- 
-    </div>
 
-    
-      <div class="column">
-              <a href="#">
-                <div class="card">
-                    <img src="badminton-img.jpg" >
-                    <h2>Mix & Doubles</h2>
-                </div>
-              </a>
-      </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7190.864274844562!2d85.35142979999999!3d25.690112500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed3fff25420e57%3A0x5a72f0d47afa9404!2sGOVERNMENT%20ENGINEERING%20COLLEGE%20VAISHALI!5e0!3m2!1sen!2sin!4v1696767198259!5m2!1sen!2sin" width="500" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
-
-  </div>
  
 </body>
 <script src="script.js"></script>
