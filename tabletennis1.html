@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="GEC-Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <title>GEC-Vaishali : Tarang2.0</title>
+  <style>
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float three columns side by side */
+  .column {
+    float: left;
+    width: 33.3%;
+    padding: 10px 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
+  }
+  
+  .card img {
+    border-radius: 10px 10px 10px 10px;
+    height: 20rem;
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+</style>  
+
+</head>
+<body>
+
+    <nav>
+        <div class="nav-bar" >
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <div class="logo-tarang ">
+            <span class="logo navLogo"><a href="#"><img src="SportsLogoTarang.jpg" alt="logo" height="60px" width="250px"></a></span>
+            </div>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"><img src="SportsLogoTarang.jpg" alt="logo" height="60px" width="250px"></a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                  <a href="location.html"><i class="fa fa-map-marker location" aria-hidden="true" ></i>Location</a>
+                    <li><a href="index.html#home"><button class="custom-btn btn-hover btns"><span>Home</span></button></a></li>
+                    <li><a href="index.html#events" ><button class="custom-btn btn-hover btns"><span>Events</span></button></a></li>
+                    <!-- <li><a href="#about" ><button class="custom-btn btn-hover btns"><span>About</span></button></a></li> -->
+                    <li><a href="about.html" ><button class="custom-btn btn-hover btns"><span>About</span></button></a></li>
+                    <li><a href="about.html#contact"><button class="custom-btn btn-hover btns" ><span>contact </span></button></a></li>
+                    <li><a href="https://forms.gle/1MbE8JxbunXHtFkp7"><button class="custom-btn btn-hover btns facultyBtn" ><span>Faculty & Staff Participation </span></button></a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+<!-- partial:index.partial.html -->
+<div class="row">
+  
+    <div class="column">
+           <a href="#">
+            <div class="card">
+                <img src="table-tennisSVG.png" >
+                <h2>Boys & Girls</h2>
+            </div>
+           </a>
+ 
+    </div>
+
+    
+      <div class="column">
+              <a href="#">
+                <div class="card">
+                    <img src="table-tennisSVG.png" >
+                    <h2>Mix & Doubles</h2>
+                </div>
+              </a>
+      </div>
+
+
+
+  </div>
+ 
+</body>
+<script src="script.js"></script>
+</html>
