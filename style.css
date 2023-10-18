@@ -552,6 +552,7 @@ color: rgb(245, 89, 28);
   .faculties button{
     margin-left:1.45rem; 
   }
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
@@ -1178,4 +1179,10 @@ button.slick-prev, button.slick-prev:hover {
 .location{
   margin-left: 1rem;
   font-size: 1.25rem;
+}
+
+
+.noc-style{
+  width: 90%;
+  margin: auto;
 }
