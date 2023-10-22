@@ -398,13 +398,10 @@ setTimeout( function () {
         document.getElementById("minutes").innerHTML = minutes;
         document.getElementById("seconds").innerHTML = seconds;
 
-        if(distance < 0){
+        if(distance <= 0){
             clearInterval(x);
-
-        document.getElementById("days").innerHTML = "00";
-        document.getElementById("hours").innerHTML = "00";
-        document.getElementById("minutes").innerHTML = "00";
-        document.getElementById("seconds").innerHTML = "00";
+        document.getElementById("countdown").style.display = "none";
+        document.querySelector(".registrationStatus").innerHTML = "Registration Closed";
         }
 
     },1000)

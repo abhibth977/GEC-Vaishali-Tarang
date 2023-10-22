@@ -553,6 +553,8 @@ color: rgb(245, 89, 28);
     margin-left:1.45rem; 
   }
 
+  
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
@@ -1185,4 +1187,17 @@ button.slick-prev, button.slick-prev:hover {
 .noc-style{
   width: 90%;
   margin: auto;
+}
+
+
+.registrationStatus{
+  width:22rem ;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
 }
