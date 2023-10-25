@@ -366,7 +366,7 @@ z-index: 2;
     .cardContainer
 {
     width: 19rem;
-    height: 16rem;
+    height: 21rem;
     margin-bottom: 3.5rem;
     float: left; 
 }
@@ -476,7 +476,7 @@ color: rgb(245, 89, 28);
     background: #fff;
     color: #262626;
     width: 18rem;
-    height: 18rem;
+    height: 19rem;
     border-radius: 10px;
     padding: 5px;
     backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
@@ -554,7 +554,6 @@ color: rgb(245, 89, 28);
   }
 
   
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
@@ -1201,3 +1200,16 @@ button.slick-prev, button.slick-prev:hover {
   background-color: #fff;
   color: #000;
 }
+.roster1{
+  position: relative;
+  top: 89%;
+  font-size: 1.5rem; 
+  font-weight: 600;
+  margin-top: .25rem;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  width: 17rem;
+}
+

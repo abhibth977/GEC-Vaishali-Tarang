@@ -321,6 +321,7 @@ document.querySelector('a[href="#events"]').addEventListener('click', function (
 
 
 
+
 // The typewriter effect 
 var typeWriterElement = document.getElementById('typewriter');
 
@@ -469,3 +470,89 @@ window.addEventListener('load', welShowPopup);
 
 // Close the popup when the close button is clicked
 closeButton2.addEventListener('click', welHideidePopup);
+
+
+
+
+
+// Cricket Roster
+document.querySelector('a[href="#cricket"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('cricket'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+
+// Volleyball Roster
+document.querySelector('a[href="#volleyball"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('volleyball'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+// Table-Tennis Roster
+document.querySelector('a[href="#table-tennis"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('table-tennis'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+// Badminton Roster
+document.querySelector('a[href="#badminton"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('badminton'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+// Carrom
+document.querySelector('a[href="#carrom"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('carrom'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+// Chess
+document.querySelector('a[href="#chess"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('chess'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+// OnlineGames Roster
+document.querySelector('a[href="#bgmi"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('bgmi'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+// Hurdle-Race Roster
+document.querySelector('a[href="#hurdlerace"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('hurdlerace'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
+
+// Kabbadi Roster
+document.querySelector('a[href="#kabbadi"]').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default behavior of the link
+  const targetSection = document.getElementById('kabbadi'); // Get the target section by its ID
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+  }
+});
